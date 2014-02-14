@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E13385FD18AD58A4004ED023 /* FMModulesRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E13385FC18AD58A4004ED023 /* FMModulesRenderView.m */; };
+		E133860018AD5B68004ED023 /* FMModulesRenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E13385FF18AD5B68004ED023 /* FMModulesRenderViewController.m */; };
+		E1A850B818ACFB9200121377 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A850B718ACFB9200121377 /* Cocoa.framework */; };
+		E1A850C218ACFB9200121377 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1A850C018ACFB9200121377 /* InfoPlist.strings */; };
+		E1A850C418ACFB9200121377 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A850C318ACFB9200121377 /* main.m */; };
+		E1A850C818ACFB9200121377 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E1A850C618ACFB9200121377 /* Credits.rtf */; };
+		E1A850CB18ACFB9200121377 /* FMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A850CA18ACFB9200121377 /* FMAppDelegate.m */; };
+		E1A850CE18ACFB9200121377 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A850CC18ACFB9200121377 /* MainMenu.xib */; };
+		E1A850D018ACFB9200121377 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A850CF18ACFB9200121377 /* Images.xcassets */; };
+		E1A850D718ACFB9200121377 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A850D618ACFB9200121377 /* XCTest.framework */; };
+		E1A850D818ACFB9200121377 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A850B718ACFB9200121377 /* Cocoa.framework */; };
+		E1A850E018ACFB9200121377 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1A850DE18ACFB9200121377 /* InfoPlist.strings */; };
+		E1A850E218ACFB9200121377 /* CocoaSpriteToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A850E118ACFB9200121377 /* CocoaSpriteToolTests.m */; };
+		E1A850F418ACFDB900121377 /* FMModulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A850F218ACFDB900121377 /* FMModulesViewController.m */; };
+		E1A850F518ACFDB900121377 /* FMModulesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A850F318ACFDB900121377 /* FMModulesViewController.xib */; };
+		E1A850F918ACFDF700121377 /* FMFramesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A850F718ACFDF700121377 /* FMFramesViewController.m */; };
+		E1A850FA18ACFDF700121377 /* FMFramesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A850F818ACFDF700121377 /* FMFramesViewController.xib */; };
+		E1A850FE18ACFE4200121377 /* FMAnimationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A850FC18ACFE4200121377 /* FMAnimationsViewController.m */; };
+		E1A850FF18ACFE4200121377 /* FMAnimationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A850FD18ACFE4200121377 /* FMAnimationsViewController.xib */; };
+		E1A8510318ACFFD900121377 /* FMSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A8510218ACFFD900121377 /* FMSprite.m */; };
+		E1A8510618ACFFE500121377 /* FMModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A8510518ACFFE500121377 /* FMModule.m */; };
+		E1A8510918ACFFF500121377 /* FMFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A8510818ACFFF500121377 /* FMFrame.m */; };
+		E1A8510C18AD000300121377 /* FMFrameModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A8510B18AD000300121377 /* FMFrameModule.m */; };
+		E1A8510F18AD001000121377 /* FMAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A8510E18AD001000121377 /* FMAnimation.m */; };
+		E1A8511218AD001E00121377 /* FMAnimationFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A8511118AD001E00121377 /* FMAnimationFrame.m */; };
+		E1A8511618AD034F00121377 /* NSString+FM.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A8511518AD034F00121377 /* NSString+FM.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1A850D918ACFB9200121377 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1A850AC18ACFB9100121377 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1A850B318ACFB9200121377;
+			remoteInfo = CocoaSpriteTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E13385FB18AD58A4004ED023 /* FMModulesRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMModulesRenderView.h; sourceTree = "<group>"; };
+		E13385FC18AD58A4004ED023 /* FMModulesRenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMModulesRenderView.m; sourceTree = "<group>"; };
+		E13385FE18AD5B68004ED023 /* FMModulesRenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMModulesRenderViewController.h; sourceTree = "<group>"; };
+		E13385FF18AD5B68004ED023 /* FMModulesRenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMModulesRenderViewController.m; sourceTree = "<group>"; };
+		E1A850B418ACFB9200121377 /* CocoaSpriteTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaSpriteTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A850B718ACFB9200121377 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E1A850BA18ACFB9200121377 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E1A850BB18ACFB9200121377 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E1A850BC18ACFB9200121377 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E1A850BF18ACFB9200121377 /* CocoaSpriteTool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaSpriteTool-Info.plist"; sourceTree = "<group>"; };
+		E1A850C118ACFB9200121377 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E1A850C318ACFB9200121377 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E1A850C518ACFB9200121377 /* CocoaSpriteTool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaSpriteTool-Prefix.pch"; sourceTree = "<group>"; };
+		E1A850C718ACFB9200121377 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		E1A850C918ACFB9200121377 /* FMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMAppDelegate.h; sourceTree = "<group>"; };
+		E1A850CA18ACFB9200121377 /* FMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMAppDelegate.m; sourceTree = "<group>"; };
+		E1A850CD18ACFB9200121377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E1A850CF18ACFB9200121377 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E1A850D518ACFB9200121377 /* CocoaSpriteToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaSpriteToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A850D618ACFB9200121377 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E1A850DD18ACFB9200121377 /* CocoaSpriteToolTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaSpriteToolTests-Info.plist"; sourceTree = "<group>"; };
+		E1A850DF18ACFB9200121377 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E1A850E118ACFB9200121377 /* CocoaSpriteToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaSpriteToolTests.m; sourceTree = "<group>"; };
+		E1A850F118ACFDB900121377 /* FMModulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMModulesViewController.h; sourceTree = "<group>"; };
+		E1A850F218ACFDB900121377 /* FMModulesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMModulesViewController.m; sourceTree = "<group>"; };
+		E1A850F318ACFDB900121377 /* FMModulesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMModulesViewController.xib; sourceTree = "<group>"; };
+		E1A850F618ACFDF700121377 /* FMFramesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMFramesViewController.h; sourceTree = "<group>"; };
+		E1A850F718ACFDF700121377 /* FMFramesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMFramesViewController.m; sourceTree = "<group>"; };
+		E1A850F818ACFDF700121377 /* FMFramesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMFramesViewController.xib; sourceTree = "<group>"; };
+		E1A850FB18ACFE4200121377 /* FMAnimationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMAnimationsViewController.h; sourceTree = "<group>"; };
+		E1A850FC18ACFE4200121377 /* FMAnimationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMAnimationsViewController.m; sourceTree = "<group>"; };
+		E1A850FD18ACFE4200121377 /* FMAnimationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMAnimationsViewController.xib; sourceTree = "<group>"; };
+		E1A8510118ACFFD900121377 /* FMSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMSprite.h; sourceTree = "<group>"; };
+		E1A8510218ACFFD900121377 /* FMSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMSprite.m; sourceTree = "<group>"; };
+		E1A8510418ACFFE500121377 /* FMModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMModule.h; sourceTree = "<group>"; };
+		E1A8510518ACFFE500121377 /* FMModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMModule.m; sourceTree = "<group>"; };
+		E1A8510718ACFFF500121377 /* FMFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMFrame.h; sourceTree = "<group>"; };
+		E1A8510818ACFFF500121377 /* FMFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMFrame.m; sourceTree = "<group>"; };
+		E1A8510A18AD000300121377 /* FMFrameModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMFrameModule.h; sourceTree = "<group>"; };
+		E1A8510B18AD000300121377 /* FMFrameModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMFrameModule.m; sourceTree = "<group>"; };
+		E1A8510D18AD001000121377 /* FMAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMAnimation.h; sourceTree = "<group>"; };
+		E1A8510E18AD001000121377 /* FMAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMAnimation.m; sourceTree = "<group>"; };
+		E1A8511018AD001E00121377 /* FMAnimationFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMAnimationFrame.h; sourceTree = "<group>"; };
+		E1A8511118AD001E00121377 /* FMAnimationFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMAnimationFrame.m; sourceTree = "<group>"; };
+		E1A8511418AD034F00121377 /* NSString+FM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FM.h"; sourceTree = "<group>"; };
+		E1A8511518AD034F00121377 /* NSString+FM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FM.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1A850B118ACFB9200121377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A850B818ACFB9200121377 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A850D218ACFB9200121377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A850D818ACFB9200121377 /* Cocoa.framework in Frameworks */,
+				E1A850D718ACFB9200121377 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E13385FA18AD588E004ED023 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E13385FB18AD58A4004ED023 /* FMModulesRenderView.h */,
+				E13385FC18AD58A4004ED023 /* FMModulesRenderView.m */,
+			);
+			name = Views;
+			path = Classes/Views;
+			sourceTree = "<group>";
+		};
+		E1A850AB18ACFB9100121377 = {
+			isa = PBXGroup;
+			children = (
+				E1A850BD18ACFB9200121377 /* CocoaSpriteTool */,
+				E1A850DB18ACFB9200121377 /* CocoaSpriteToolTests */,
+				E1A850B618ACFB9200121377 /* Frameworks */,
+				E1A850B518ACFB9200121377 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1A850B518ACFB9200121377 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1A850B418ACFB9200121377 /* CocoaSpriteTool.app */,
+				E1A850D518ACFB9200121377 /* CocoaSpriteToolTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1A850B618ACFB9200121377 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1A850B718ACFB9200121377 /* Cocoa.framework */,
+				E1A850D618ACFB9200121377 /* XCTest.framework */,
+				E1A850B918ACFB9200121377 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1A850B918ACFB9200121377 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1A850BA18ACFB9200121377 /* AppKit.framework */,
+				E1A850BB18ACFB9200121377 /* CoreData.framework */,
+				E1A850BC18ACFB9200121377 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E1A850BD18ACFB9200121377 /* CocoaSpriteTool */ = {
+			isa = PBXGroup;
+			children = (
+				E1A850C918ACFB9200121377 /* FMAppDelegate.h */,
+				E1A850CA18ACFB9200121377 /* FMAppDelegate.m */,
+				E1A8511318AD033700121377 /* Helpers */,
+				E1A8510018ACFFC900121377 /* Model */,
+				E13385FA18AD588E004ED023 /* Views */,
+				E1A850F018ACFDB900121377 /* Controllers */,
+				E1A850CC18ACFB9200121377 /* MainMenu.xib */,
+				E1A850CF18ACFB9200121377 /* Images.xcassets */,
+				E1A850BE18ACFB9200121377 /* Supporting Files */,
+			);
+			path = CocoaSpriteTool;
+			sourceTree = "<group>";
+		};
+		E1A850BE18ACFB9200121377 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1A850BF18ACFB9200121377 /* CocoaSpriteTool-Info.plist */,
+				E1A850C018ACFB9200121377 /* InfoPlist.strings */,
+				E1A850C318ACFB9200121377 /* main.m */,
+				E1A850C518ACFB9200121377 /* CocoaSpriteTool-Prefix.pch */,
+				E1A850C618ACFB9200121377 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1A850DB18ACFB9200121377 /* CocoaSpriteToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1A850E118ACFB9200121377 /* CocoaSpriteToolTests.m */,
+				E1A850DC18ACFB9200121377 /* Supporting Files */,
+			);
+			path = CocoaSpriteToolTests;
+			sourceTree = "<group>";
+		};
+		E1A850DC18ACFB9200121377 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1A850DD18ACFB9200121377 /* CocoaSpriteToolTests-Info.plist */,
+				E1A850DE18ACFB9200121377 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1A850F018ACFDB900121377 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E13385FE18AD5B68004ED023 /* FMModulesRenderViewController.h */,
+				E13385FF18AD5B68004ED023 /* FMModulesRenderViewController.m */,
+				E1A850F118ACFDB900121377 /* FMModulesViewController.h */,
+				E1A850F218ACFDB900121377 /* FMModulesViewController.m */,
+				E1A850F318ACFDB900121377 /* FMModulesViewController.xib */,
+				E1A850F618ACFDF700121377 /* FMFramesViewController.h */,
+				E1A850F718ACFDF700121377 /* FMFramesViewController.m */,
+				E1A850F818ACFDF700121377 /* FMFramesViewController.xib */,
+				E1A850FB18ACFE4200121377 /* FMAnimationsViewController.h */,
+				E1A850FC18ACFE4200121377 /* FMAnimationsViewController.m */,
+				E1A850FD18ACFE4200121377 /* FMAnimationsViewController.xib */,
+			);
+			name = Controllers;
+			path = Classes/Controllers;
+			sourceTree = "<group>";
+		};
+		E1A8510018ACFFC900121377 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1A8510118ACFFD900121377 /* FMSprite.h */,
+				E1A8510218ACFFD900121377 /* FMSprite.m */,
+				E1A8510418ACFFE500121377 /* FMModule.h */,
+				E1A8510518ACFFE500121377 /* FMModule.m */,
+				E1A8510718ACFFF500121377 /* FMFrame.h */,
+				E1A8510818ACFFF500121377 /* FMFrame.m */,
+				E1A8510A18AD000300121377 /* FMFrameModule.h */,
+				E1A8510B18AD000300121377 /* FMFrameModule.m */,
+				E1A8510D18AD001000121377 /* FMAnimation.h */,
+				E1A8510E18AD001000121377 /* FMAnimation.m */,
+				E1A8511018AD001E00121377 /* FMAnimationFrame.h */,
+				E1A8511118AD001E00121377 /* FMAnimationFrame.m */,
+			);
+			name = Model;
+			path = Classes/Model;
+			sourceTree = "<group>";
+		};
+		E1A8511318AD033700121377 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E1A8511418AD034F00121377 /* NSString+FM.h */,
+				E1A8511518AD034F00121377 /* NSString+FM.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1A850B318ACFB9200121377 /* CocoaSpriteTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1A850E518ACFB9200121377 /* Build configuration list for PBXNativeTarget "CocoaSpriteTool" */;
+			buildPhases = (
+				E1A850B018ACFB9200121377 /* Sources */,
+				E1A850B118ACFB9200121377 /* Frameworks */,
+				E1A850B218ACFB9200121377 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaSpriteTool;
+			productName = CocoaSpriteTool;
+			productReference = E1A850B418ACFB9200121377 /* CocoaSpriteTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1A850D418ACFB9200121377 /* CocoaSpriteToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1A850E818ACFB9200121377 /* Build configuration list for PBXNativeTarget "CocoaSpriteToolTests" */;
+			buildPhases = (
+				E1A850D118ACFB9200121377 /* Sources */,
+				E1A850D218ACFB9200121377 /* Frameworks */,
+				E1A850D318ACFB9200121377 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1A850DA18ACFB9200121377 /* PBXTargetDependency */,
+			);
+			name = CocoaSpriteToolTests;
+			productName = CocoaSpriteToolTests;
+			productReference = E1A850D518ACFB9200121377 /* CocoaSpriteToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1A850AC18ACFB9100121377 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FM;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Fernando Mazzon";
+				TargetAttributes = {
+					E1A850D418ACFB9200121377 = {
+						TestTargetID = E1A850B318ACFB9200121377;
+					};
+				};
+			};
+			buildConfigurationList = E1A850AF18ACFB9100121377 /* Build configuration list for PBXProject "CocoaSpriteTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1A850AB18ACFB9100121377;
+			productRefGroup = E1A850B518ACFB9200121377 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1A850B318ACFB9200121377 /* CocoaSpriteTool */,
+				E1A850D418ACFB9200121377 /* CocoaSpriteToolTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1A850B218ACFB9200121377 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A850C218ACFB9200121377 /* InfoPlist.strings in Resources */,
+				E1A850D018ACFB9200121377 /* Images.xcassets in Resources */,
+				E1A850C818ACFB9200121377 /* Credits.rtf in Resources */,
+				E1A850FA18ACFDF700121377 /* FMFramesViewController.xib in Resources */,
+				E1A850FF18ACFE4200121377 /* FMAnimationsViewController.xib in Resources */,
+				E1A850CE18ACFB9200121377 /* MainMenu.xib in Resources */,
+				E1A850F518ACFDB900121377 /* FMModulesViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A850D318ACFB9200121377 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A850E018ACFB9200121377 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1A850B018ACFB9200121377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A850FE18ACFE4200121377 /* FMAnimationsViewController.m in Sources */,
+				E1A8510C18AD000300121377 /* FMFrameModule.m in Sources */,
+				E1A8510618ACFFE500121377 /* FMModule.m in Sources */,
+				E1A8510918ACFFF500121377 /* FMFrame.m in Sources */,
+				E1A8511218AD001E00121377 /* FMAnimationFrame.m in Sources */,
+				E13385FD18AD58A4004ED023 /* FMModulesRenderView.m in Sources */,
+				E1A850F418ACFDB900121377 /* FMModulesViewController.m in Sources */,
+				E1A8510F18AD001000121377 /* FMAnimation.m in Sources */,
+				E1A850C418ACFB9200121377 /* main.m in Sources */,
+				E1A850CB18ACFB9200121377 /* FMAppDelegate.m in Sources */,
+				E1A850F918ACFDF700121377 /* FMFramesViewController.m in Sources */,
+				E133860018AD5B68004ED023 /* FMModulesRenderViewController.m in Sources */,
+				E1A8511618AD034F00121377 /* NSString+FM.m in Sources */,
+				E1A8510318ACFFD900121377 /* FMSprite.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A850D118ACFB9200121377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A850E218ACFB9200121377 /* CocoaSpriteToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1A850DA18ACFB9200121377 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1A850B318ACFB9200121377 /* CocoaSpriteTool */;
+			targetProxy = E1A850D918ACFB9200121377 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1A850C018ACFB9200121377 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1A850C118ACFB9200121377 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E1A850C618ACFB9200121377 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1A850C718ACFB9200121377 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		E1A850CC18ACFB9200121377 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1A850CD18ACFB9200121377 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		E1A850DE18ACFB9200121377 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1A850DF18ACFB9200121377 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1A850E318ACFB9200121377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E1A850E418ACFB9200121377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E1A850E618ACFB9200121377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaSpriteTool/CocoaSpriteTool-Prefix.pch";
+				INFOPLIST_FILE = "CocoaSpriteTool/CocoaSpriteTool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E1A850E718ACFB9200121377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaSpriteTool/CocoaSpriteTool-Prefix.pch";
+				INFOPLIST_FILE = "CocoaSpriteTool/CocoaSpriteTool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E1A850E918ACFB9200121377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CocoaSpriteTool.app/Contents/MacOS/CocoaSpriteTool";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaSpriteTool/CocoaSpriteTool-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CocoaSpriteToolTests/CocoaSpriteToolTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E1A850EA18ACFB9200121377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CocoaSpriteTool.app/Contents/MacOS/CocoaSpriteTool";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaSpriteTool/CocoaSpriteTool-Prefix.pch";
+				INFOPLIST_FILE = "CocoaSpriteToolTests/CocoaSpriteToolTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1A850AF18ACFB9100121377 /* Build configuration list for PBXProject "CocoaSpriteTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1A850E318ACFB9200121377 /* Debug */,
+				E1A850E418ACFB9200121377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1A850E518ACFB9200121377 /* Build configuration list for PBXNativeTarget "CocoaSpriteTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1A850E618ACFB9200121377 /* Debug */,
+				E1A850E718ACFB9200121377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1A850E818ACFB9200121377 /* Build configuration list for PBXNativeTarget "CocoaSpriteToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1A850E918ACFB9200121377 /* Debug */,
+				E1A850EA18ACFB9200121377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1A850AC18ACFB9100121377 /* Project object */;
+}
