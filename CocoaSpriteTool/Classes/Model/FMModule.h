@@ -21,4 +21,6 @@
 @property (nonatomic, assign) NSInteger width;
 @property (nonatomic, assign) NSInteger height;
 
+@property (nonatomic, assign) CGRect rectangle;
+
 @end

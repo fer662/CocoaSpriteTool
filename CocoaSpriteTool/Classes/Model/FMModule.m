@@ -50,4 +50,9 @@ static const NSInteger kDefaultModuleHeight = 50;
     return module;
 }
 
+- (CGRect)rectangle
+{
+    return CGRectMake(self.x, self.y, self.width, self.height);
+}
+
 @end

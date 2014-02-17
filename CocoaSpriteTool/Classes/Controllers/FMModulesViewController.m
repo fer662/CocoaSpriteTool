@@ -10,7 +10,7 @@
 #import "FMSprite.h"
 #import "FMModulesRenderView.h"
 
-@interface FMModulesViewController () <NSTableViewDelegate, NSTableViewDataSource>
+@interface FMModulesViewController () <NSTableViewDelegate>
 
 @property (weak) IBOutlet NSTableView *tableView;
 @property (strong) IBOutlet NSArrayController *arrayController;
@@ -20,16 +20,20 @@
 
 @implementation FMModulesViewController
 
-- (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
+- (void)dealloc
 {
-	return [self.sprite.modules count];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (id)tableView:(NSTableView *)tv objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
+- (void)loadView
 {
-	return [self.sprite.modules objectAtIndex:row];
+    [super loadView];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(editingDidEnd:)
+                                                 name:NSControlTextDidEndEditingNotification object:self.tableView];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tableViewSelectionDidChange:) name:NSTableViewSelectionDidChangeNotification
+                                               object:self.tableView];
 }
-
 
 - (void)setSprite:(FMSprite *)sprite
 {
@@ -38,5 +42,29 @@
     self.modulesRenderView.modules = self.sprite.modules;
     [self.modulesRenderView setNeedsDisplay:YES];
 }
+
+- (void)editingDidEnd:(NSNotification *)notification
+{
+    [self.modulesRenderView setNeedsDisplay:YES];
+}
+
+#pragma - NSTableViewDelegate
+
+- (BOOL)control:(NSControl *)control textShouldBeginEditing:(NSText *)fieldEditor
+{
+    return YES;
+}
+
+- (BOOL)control:(NSControl *)control textShouldEndEditing:(NSText *)fieldEditor
+{
+    return YES;
+}
+
+- (void)tableViewSelectionDidChange:(NSNotification *)notification
+{
+    [self.modulesRenderView setNeedsDisplay:YES];
+}
+
+#pragma -
 
 @end

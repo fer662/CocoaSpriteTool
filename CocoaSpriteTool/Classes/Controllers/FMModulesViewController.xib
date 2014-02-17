@@ -7,9 +7,10 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="FMModulesViewController">
             <connections>
-                <outlet property="modulesRenderView" destination="NGv-Yf-OTv" id="Ocn-Az-S22"/>
-                <outlet property="tableView" destination="r9D-kA-nEh" id="j6I-jD-dYG"/>
-                <outlet property="view" destination="1" id="2"/>
+                <outlet property="arrayController" destination="0o3-7t-Ly1" id="XZ7-jI-EIV"/>
+                <outlet property="modulesRenderView" destination="NGv-Yf-OTv" id="9kd-fp-fBk"/>
+                <outlet property="tableView" destination="Fjj-59-YZj" id="sIg-Eb-lAQ"/>
+                <outlet property="view" destination="1" id="MrT-7u-bKc"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -29,7 +30,7 @@
                                 <rect key="frame" x="1" y="17" width="343" height="535"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="7dx-vi-Vx9" id="Fjj-59-YZj">
+                                    <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" autosaveColumns="NO" typeSelect="NO" headerView="7dx-vi-Vx9" id="Fjj-59-YZj">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="535"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <size key="intercellSpacing" width="3" height="2"/>
@@ -119,6 +120,8 @@
                                         </tableColumns>
                                         <connections>
                                             <binding destination="0o3-7t-Ly1" name="content" keyPath="arrangedObjects" id="oyb-dr-sFn"/>
+                                            <binding destination="0o3-7t-Ly1" name="selectionIndexes" keyPath="selectionIndexes" previousBinding="oyb-dr-sFn" id="3tn-EL-ahO"/>
+                                            <outlet property="delegate" destination="-2" id="EbU-dx-Lp7"/>
                                         </connections>
                                     </tableView>
                                 </subviews>
@@ -140,6 +143,9 @@
                         <customView fixedFrame="YES" id="NGv-Yf-OTv" customClass="FMModulesRenderView">
                             <rect key="frame" x="355" y="0.0" width="341" height="553"/>
                             <autoresizingMask key="autoresizingMask"/>
+                            <connections>
+                                <outlet property="arrayController" destination="0o3-7t-Ly1" id="Zjz-Vk-iXl"/>
+                            </connections>
                         </customView>
                     </subviews>
                     <holdingPriorities>
@@ -165,6 +171,5 @@
                 <binding destination="-2" name="contentArray" keyPath="self.sprite.modules" id="McB-GQ-gvT"/>
             </connections>
         </arrayController>
-        <viewController id="xLG-WK-6B4" customClass="NSModulesRenderViewController"/>
     </objects>
 </document>
