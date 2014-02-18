@@ -55,4 +55,20 @@ static const NSInteger kDefaultModuleHeight = 50;
     return CGRectMake(self.x, self.y, self.width, self.height);
 }
 
+- (NSInteger)right
+{
+    return self.x + self.width;
+}
+
+- (NSInteger)bottom
+{
+    return self.y + self.height;
+}
+
+- (void)offsetBy:(CGPoint)delta
+{
+    self.x += delta.x;
+    self.y += delta.y;
+}
+
 @end

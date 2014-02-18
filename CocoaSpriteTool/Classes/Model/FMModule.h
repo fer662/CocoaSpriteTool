@@ -21,6 +21,10 @@
 @property (nonatomic, assign) NSInteger width;
 @property (nonatomic, assign) NSInteger height;
 
-@property (nonatomic, assign) CGRect rectangle;
+@property (nonatomic, assign, readonly) CGRect rectangle;
+@property (nonatomic, assign, readonly) NSInteger right;
+@property (nonatomic, assign, readonly) NSInteger bottom;
+
+- (void)offsetBy:(CGPoint)delta;
 
 @end

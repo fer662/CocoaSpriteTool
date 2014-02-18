@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E13385FD18AD58A4004ED023 /* FMModulesRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E13385FC18AD58A4004ED023 /* FMModulesRenderView.m */; };
 		E133860018AD5B68004ED023 /* FMModulesRenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E13385FF18AD5B68004ED023 /* FMModulesRenderViewController.m */; };
+		E133860318B39EBE004ED023 /* NSCursor+FM.m in Sources */ = {isa = PBXBuildFile; fileRef = E133860218B39EBE004ED023 /* NSCursor+FM.m */; };
 		E1A850B818ACFB9200121377 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A850B718ACFB9200121377 /* Cocoa.framework */; };
 		E1A850C218ACFB9200121377 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1A850C018ACFB9200121377 /* InfoPlist.strings */; };
 		E1A850C418ACFB9200121377 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A850C318ACFB9200121377 /* main.m */; };
@@ -50,6 +51,8 @@
 		E13385FC18AD58A4004ED023 /* FMModulesRenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMModulesRenderView.m; sourceTree = "<group>"; };
 		E13385FE18AD5B68004ED023 /* FMModulesRenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMModulesRenderViewController.h; sourceTree = "<group>"; };
 		E13385FF18AD5B68004ED023 /* FMModulesRenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMModulesRenderViewController.m; sourceTree = "<group>"; };
+		E133860118B39EBE004ED023 /* NSCursor+FM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCursor+FM.h"; sourceTree = "<group>"; };
+		E133860218B39EBE004ED023 /* NSCursor+FM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCursor+FM.m"; sourceTree = "<group>"; };
 		E1A850B418ACFB9200121377 /* CocoaSpriteTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaSpriteTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A850B718ACFB9200121377 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E1A850BA18ACFB9200121377 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -254,6 +257,8 @@
 			children = (
 				E1A8511418AD034F00121377 /* NSString+FM.h */,
 				E1A8511518AD034F00121377 /* NSString+FM.m */,
+				E133860118B39EBE004ED023 /* NSCursor+FM.h */,
+				E133860218B39EBE004ED023 /* NSCursor+FM.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -369,6 +374,7 @@
 				E1A850F418ACFDB900121377 /* FMModulesViewController.m in Sources */,
 				E1A8510F18AD001000121377 /* FMAnimation.m in Sources */,
 				E1A850C418ACFB9200121377 /* main.m in Sources */,
+				E133860318B39EBE004ED023 /* NSCursor+FM.m in Sources */,
 				E1A850CB18ACFB9200121377 /* FMAppDelegate.m in Sources */,
 				E1A850F918ACFDF700121377 /* FMFramesViewController.m in Sources */,
 				E133860018AD5B68004ED023 /* FMModulesRenderViewController.m in Sources */,
