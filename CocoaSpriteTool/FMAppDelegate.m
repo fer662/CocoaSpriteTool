@@ -33,6 +33,16 @@
     self.modulesViewController.sprite = sprite;
 }
 
+- (IBAction)undo:(id)sender
+{
+    [self.sprite.undoManager undo];
+}
+
+- (IBAction)redo:(id)sender
+{
+    [self.sprite.undoManager redo];
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     self.sprite = [[FMSprite alloc] init];

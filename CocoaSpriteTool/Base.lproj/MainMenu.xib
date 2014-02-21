@@ -128,13 +128,13 @@
                         <items>
                             <menuItem title="Undo" keyEquivalent="z" id="207">
                                 <connections>
-                                    <action selector="undo:" target="-1" id="223"/>
+                                    <action selector="undo:" target="494" id="kvs-fS-xN1"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Redo" keyEquivalent="Z" id="215">
                                 <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
                                 <connections>
-                                    <action selector="redo:" target="-1" id="231"/>
+                                    <action selector="redo:" target="494" id="wdU-EY-Z9N"/>
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="206">
@@ -650,20 +650,20 @@
         <window title="CocoaSpriteTool" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="730" height="599"/>
+            <rect key="contentRect" x="335" y="390" width="730" height="551"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
             <view key="contentView" id="372">
-                <rect key="frame" x="0.0" y="0.0" width="730" height="599"/>
+                <rect key="frame" x="0.0" y="0.0" width="730" height="551"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <tabView focusRingType="none" translatesAutoresizingMaskIntoConstraints="NO" id="2EG-fw-KT0">
-                        <rect key="frame" x="13" y="10" width="704" height="583"/>
+                        <rect key="frame" x="13" y="10" width="704" height="535"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
                             <tabViewItem label="Modules" identifier="1" id="GJI-n4-ork">
                                 <view key="view" id="We0-ON-03E">
-                                    <rect key="frame" x="10" y="33" width="0.0" height="0.0"/>
+                                    <rect key="frame" x="10" y="33" width="684" height="489"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                             </tabViewItem>

@@ -8,6 +8,7 @@
 
 #import "FMModule.h"
 #import "NSString+FM.h"
+#import "FMSprite.h"
 
 static const NSInteger kDefaultModuleWidth = 50;
 static const NSInteger kDefaultModuleHeight = 50;
@@ -69,6 +70,42 @@ static const NSInteger kDefaultModuleHeight = 50;
 {
     self.x += delta.x;
     self.y += delta.y;
+}
+
+- (void)setX:(NSInteger)x
+{
+    [[self.sprite.undoManager prepareWithInvocationTarget:self] setX:_x];
+    if (![self.sprite.undoManager isUndoing]){
+        [self.sprite.undoManager setActionName:@"Move Module"];
+    }
+    _x = x;
+}
+
+- (void)setY:(NSInteger)y
+{
+    [[self.sprite.undoManager prepareWithInvocationTarget:self] setY:_y];
+    if (![self.sprite.undoManager isUndoing]){
+        [self.sprite.undoManager setActionName:@"Move Module"];
+    }
+    _y = y;
+}
+
+- (void)setWidth:(NSInteger)width
+{
+    [(FMModule *)[self.sprite.undoManager prepareWithInvocationTarget:self] setWidth:_width];
+    if (![self.sprite.undoManager isUndoing]){
+        [self.sprite.undoManager setActionName:@"Move Module"];
+    }
+    _width = width;
+}
+
+- (void)setHeight:(NSInteger)height
+{
+    [(FMModule *)[self.sprite.undoManager prepareWithInvocationTarget:self] setHeight:_height];
+    if (![self.sprite.undoManager isUndoing]){
+        [self.sprite.undoManager setActionName:@"Move Module"];
+    }
+    _height = height;
 }
 
 @end

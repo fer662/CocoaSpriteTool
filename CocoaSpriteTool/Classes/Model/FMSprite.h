@@ -18,6 +18,8 @@
 @property (nonatomic, strong, readonly) NSMutableArray *frames;
 @property (nonatomic, strong, readonly) NSMutableArray *animations;
 
+@property (nonatomic, strong) NSUndoManager *undoManager;
+
 @property (nonatomic, strong) NSImage *image;
 @property (nonatomic, strong) NSString *imagePath;
 

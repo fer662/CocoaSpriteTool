@@ -12,4 +12,7 @@
 
 @property (assign) IBOutlet NSWindow *window;
 
+- (IBAction)undo:(id)sender;
+- (IBAction)redo:(id)sender;
+
 @end
